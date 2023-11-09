@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent {
+  constructor() {}
 
+  ngOnInit(): void{
+
+  }
+
+  guardar() {
+    console.log('Submit disparado')
+  }
 }
