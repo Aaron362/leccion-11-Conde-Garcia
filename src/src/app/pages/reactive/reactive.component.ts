@@ -8,8 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ReactiveComponent implements OnInit {
 
-
-  forma!: FormGroup;
+  
+  forma: FormGroup;
 
   constructor( private fb: FormBuilder){
 
@@ -28,13 +28,13 @@ export class ReactiveComponent implements OnInit {
       correo  : ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')] ],
 
     });
-
+  
   }
 
 
 
-  guardar(){
+  guardar(){ 
     console.log( this.forma );
   }
-
+ 
 }
