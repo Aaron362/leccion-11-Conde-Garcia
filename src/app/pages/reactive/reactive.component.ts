@@ -10,7 +10,7 @@ import { ValidadoresService } from '../../services/validadores.service';
 export class ReactiveComponent implements OnInit {
 
 
-  forma: FormGroup;
+  forma!: FormGroup;
 
 
   constructor( private fb: FormBuilder,
@@ -89,7 +89,7 @@ export class ReactiveComponent implements OnInit {
     this.forma.reset({
       nombre: 'Fernando',
       apellido: 'Perez',
-      correo: 'juam@gmail.com',
+      correo: 'fernando@gmail.com',
       direccion: {
         distrito: 'Ontario',
         ciudad: 'Ottawa'
