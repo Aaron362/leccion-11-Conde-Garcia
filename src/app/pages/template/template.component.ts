@@ -13,13 +13,14 @@ export class TemplateComponent implements OnInit {
     nombre: 'Fernando',
     apellido:'Herrera',
     correo:'fernando@gmail.com',
-    pais: ''
+    pais: 'CRI',
+    genero: 'M'
   }
 
   paises: any[] = [];
 
   constructor( private paisService: PaisService ) {}
-  
+
   ngOnInit():void{
 
     this.paisService.getPaises()
@@ -31,7 +32,7 @@ export class TemplateComponent implements OnInit {
           codigo: ''
         })
 
-        console.log( this.paises );
+       // console.log( this.paises );
       })
 
   }
