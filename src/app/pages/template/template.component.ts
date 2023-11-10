@@ -10,9 +10,9 @@ import { PaisService } from 'src/app/services/pais.service';
 export class TemplateComponent implements OnInit {
 
   usuario = {
-    nombre: 'Kevin',
-    apellido:'Chiquil',
-    correo:'kevin@gmail.com',
+    nombre: 'Aaron',
+    apellido:'Conde',
+    correo:'conde@gmail.com',
     pais: '',
     genero: 'M'
   }
